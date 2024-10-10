@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#mediaList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.media-item {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.media-item:hover {
+    background-color: #444;
+}
+
+#player {
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    max-height: 450px;
+}
